@@ -31,10 +31,11 @@ text.setPrefWidth(300);
 GridPane g = new  GridPane();
 g.add(text,0,0,6,2);	
 
+//button = 
+	Button equal = new Button("=");
+	g.add(equal, 4, 5,2,1);
+	equal.setPrefSize(103,40);
 //buttoms from 1 to 9
-
-
-
 for(int i =1; i<10 ;i++){
 arr[i]= new Button(Integer.toString(i));
 
@@ -176,7 +177,32 @@ arr2[8].setOnAction(e->{
 
 });
 
+//////////// event of last row
 
+
+last_row[0].setOnAction(e->{
+	text.setText((text.getText()+last_row[0].getText()));
+
+});
+
+
+last_row[1].setOnAction(e->{
+	text.setText((text.getText()+" " +last_row[1].getText()));
+	
+
+});
+
+
+last_row[2].setOnAction(e->{
+	text.setText((text.getText()+" " +last_row[2].getText()+" "));
+
+});
+
+
+last_row[3].setOnAction(e->{
+	text.setText((text.getText()+" "+last_row[3].getText()+" "));
+
+});
 
 	}}
 	
