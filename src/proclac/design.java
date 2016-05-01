@@ -46,6 +46,29 @@ for(int i =2 ;i<=4 ;i++)
 for(int j=2;j>=0;j--)
 g.add(arr[k--], j, i);
 
+ // add markes
+  
+Button []arr2= new Button[10];
+for(int i =0; i<10 ;i++){	
+ arr2[i]= new Button();
+ arr2[i].setPrefSize(50,40);
+} 
+int a=0;
+for(int i =2 ;i<=4 ;i++){
+	 for(int j=3;j<=5;j++)
+	g.add(arr2[a++], j, i); 
+	 
+	 
+}
+arr2[0].setText("/");
+arr2[1].setText("DEL");       
+arr2[2].setText("AC");      
+arr2[3].setText("*");
+arr2[4].setText("(");
+arr2[5].setText(")");
+arr2[6].setText("-");
+arr2[7].setText("x^2");
+arr2[8].setText("Sqrt");          
 /////////////////////////////////////////////////////////////////////////////////
 g.setHgap(3);
 g.setVgap(3);		
